@@ -21,10 +21,10 @@ p {
   font-family: "inter", sans-serif;
 }
 
-h1, h2{
+h1,
+h2 {
   font-family: "roboto", sans-serif;
 }
-
 
 img {
   max-width: 100%;
@@ -43,6 +43,11 @@ summary {
   font-family: "roboto", sans-serif;
 }
 
+section {
+  margin: 0px;
+  padding: 0px;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -54,8 +59,8 @@ header {
 }
 
 header a img {
-align-items: left;
-justify-content: left;
+  align-items: left;
+  justify-content: left;
 }
 
 header a {
@@ -73,8 +78,8 @@ nav {
 nav a {
   display: flex;
   justify-content: center;
-  
-  height: 80px;          
+
+  height: 80px;
 }
 
 header img {
@@ -99,7 +104,7 @@ header img {
 
 .hero {
   position: relative;
-} 
+}
 
 .hero img {
   width: 100%;
@@ -107,13 +112,12 @@ header img {
   filter: brightness(50%);
 }
 
-.sectionpadding{
+.sectionpadding {
   margin-bottom: 100px;
 }
 
-.sectionpadding2{
+.sectionpadding2 {
   margin: 100px 200px;
-  
 }
 
 .hero-content {
@@ -139,11 +143,10 @@ header img {
   background-color: #333;
   grid-template-columns: repeat(4, 1fr);
   gap: 2px;
-
 }
 
 .grid4x1 a {
-position: relative;
+  position: relative;
   border-right: none;
 }
 
@@ -171,8 +174,6 @@ position: relative;
   margin: 10px;
 }
 
-
-
 .card {
   height: 300px;
   background-size: cover;
@@ -181,10 +182,18 @@ position: relative;
   border-radius: 5px;
 }
 
-.card1 { background-image: url(../imgs/gervonte-davis.webp); }
-.card2 { background-image: url(../imgs/gervonte2.jpg); }
-.card3 { background-image: url(../imgs/ringropes.jpg); }
-.card4 { background-image: url(../imgs/beginner.jpg); }
+.card1 {
+  background-image: url(../imgs/gervonte-davis.webp);
+}
+.card2 {
+  background-image: url(../imgs/gervonte2.jpg);
+}
+.card3 {
+  background-image: url(../imgs/ringropes.jpg);
+}
+.card4 {
+  background-image: url(../imgs/beginner.jpg);
+}
 
 .card1:hover,
 .card2:hover,
@@ -199,7 +208,7 @@ position: relative;
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.3); /* darkness */
+  background: rgba(0, 0, 0, 0.3); /* darkness */
   border-radius: 5px;
 }
 
@@ -216,13 +225,12 @@ position: relative;
   align-items: center;
   text-align: center;
   color: white;
-  flex-direction: column; 
+  flex-direction: column;
 }
 
 .centered {
   justify-content: center;
   align-items: center;
-
 }
 
 .faq {
@@ -277,5 +285,12 @@ details[open] .faq-content {
 .redsection {
   background-color: darkred;
   height: 200px;
-  margin: 100px 0;
+  width: 100%;
+  margin: -4px;
+}
+
+.container {
+  width: 80%;
+  margin: 0px auto;
+  margin-top: 0px;
 }
