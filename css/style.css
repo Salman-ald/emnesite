@@ -418,6 +418,16 @@ details[open] .faq-content {
   white-space: nowrap;
 }
 
+.box4 {
+  background: #2a2a2a;
+  padding: 40px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 0px;
+  text-decoration: none;
+  color: white;
+}
+
 .box3 {
   background: #2a2a2a;
   padding: 10px;
