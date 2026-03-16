@@ -144,6 +144,20 @@ header img {
   text-align: left;
 }
 
+.grid3x1 {
+  display: grid;
+  background-color: #333;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+
+.grid4-1 {
+  display: grid;
+  background-color: inherit;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+}
+
 .grid4x1 {
   display: grid;
   background-color: #333;
@@ -174,7 +188,7 @@ header img {
 
 .grid1-1 {
   display: grid;
-  background-color: #333;
+  background-color: inherit;
   grid-template-columns: 1fr 1fr;
   gap: 2px;
   margin: 10px;
@@ -228,6 +242,16 @@ header img {
   z-index: 2;
   position: absolute;
   inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  flex-direction: column;
+}
+
+.text2 {
+  margin-top: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -323,6 +347,19 @@ details[open] .faq-content {
   flex-direction: column;
 }
 
+.container3 {
+  width: 60%;
+  margin: 0px auto;
+  padding: 40px;
+  margin-top: 30px;
+  justify-content: center;
+  border-radius: 5px;
+  align-items: center;
+  display: flex;
+  background-color: #252525;
+  flex-direction: column;
+}
+
 .mental-section {
   display: grid;
   grid-template-columns: 1fr 2px 1fr;
@@ -374,6 +411,33 @@ details[open] .faq-content {
 .title-line h1 {
   margin: 0;
   white-space: nowrap;
+}
+
+.box3 {
+  background: #2a2a2a;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.box3:hover {
+  background: #444;
+  transition: 0.3s ease;
+  cursor: pointer;
+  color: rgb(255, 79, 106);
+}
+
+.box2 {
+  background: inherit;
+  padding: 40px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 20px;
+  text-decoration: none;
+  color: white;
 }
 
 .box {
