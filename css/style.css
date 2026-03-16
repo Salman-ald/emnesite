@@ -31,6 +31,12 @@ img {
   height: auto;
 }
 
+.img1 {
+  height: 80%;
+  object-fit: cover;
+  object-position: top;
+}
+
 body {
   margin: 0px;
   padding: 0px;
@@ -174,6 +180,11 @@ header img {
   margin: 10px;
 }
 
+.icon {
+  width: 50px;
+  height: 50px;
+}
+
 .card {
   height: 300px;
   background-size: cover;
@@ -215,9 +226,6 @@ header img {
 .text {
   position: relative;
   z-index: 2;
-}
-
-.text {
   position: absolute;
   inset: 0;
   display: flex;
@@ -226,6 +234,10 @@ header img {
   text-align: center;
   color: white;
   flex-direction: column;
+}
+
+.text-box {
+  width: 80%;
 }
 
 .centered {
@@ -292,12 +304,56 @@ details[open] .faq-content {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 5px;
 }
 
 .container {
   width: 80%;
   margin: 0px auto;
   margin-top: 0px;
+}
+
+.container2 {
+  width: 80%;
+  margin: 0px auto;
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.mental-section {
+  display: grid;
+  grid-template-columns: 1fr 2px 1fr;
+  align-items: center;
+  gap: 40px;
+  margin-left: 2%;
+}
+
+.line {
+  width: 2px;
+  height: 100%;
+  background: #444;
+}
+
+.top {
+  align-self: start;
+}
+
+.margin-top {
+  margin-top: 10%;
+}
+
+.margin-top2 {
+  margin-top: 5%;
+}
+
+.divider {
+  width: 96%;
+  background: #444;
+  height: 2px;
+  margin: 0px;
 }
 
 .title-line {
@@ -312,10 +368,68 @@ details[open] .faq-content {
   content: "";
   flex: 1;
   height: 2px;
-  background: #333;
+  background: #444;
 }
 
 .title-line h1 {
   margin: 0;
   white-space: nowrap;
+}
+
+.box {
+  background: #2a2a2a;
+  padding: 40px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.box:hover {
+  background: #444;
+  transition: 0.3s ease;
+  cursor: pointer;
+  color: rgb(255, 79, 106);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.modal-content {
+  background: #2a2a2a;
+  padding: 20px;
+  border-radius: 5px;
+  width: 70%;
+  height: 80%;
+  text-align: left;
+  justify-content: center;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+.modal.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.close {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  font-size: 40px;
+  cursor: pointer;
 }
