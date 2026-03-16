@@ -6,4 +6,91 @@
         gap: 20px;
     }
 
+    
+}
+
+
+
+@media (max-width: 768px) {
+
+  .burger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+  }
+
+
+  .menu a {
+    padding: 20px;
+    border-bottom: 1px solid #444;
+  }
+
+  .menu.show {
+    display: flex;
+  }
+
+
+  /* NAVIGATION */
+  .grid4x1 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* REMOVE SIDE MARGINS */
+  .sectionpadding2 {
+    margin: 40px 20px;
+  }
+
+  /* CONTAINERS */
+  .container,
+  .container2,
+  .container3 {
+    width: 95%;
+  }
+
+  .container4 {
+    width: 100%;
+    left: 0;
+  }
+
+  /* HERO TEXT */
+  .hero-content {
+    width: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* STACK GRIDS */
+  .grid1-1,
+  .grid3x1,
+  .grid4-1 {
+    grid-template-columns: 1fr;
+  }
+
+  /* NEWS BOX GRID */
+  .boxgrid {
+    grid-template-columns: 1fr;
+  }
+
+  /* MENTAL SECTION */
+  .mental-section {
+    grid-template-columns: 1fr;
+  }
+
+  .line {
+    display: none;
+  }
+
+  /* CARD HEIGHT */
+  .card {
+    height: 200px;
+  }
+
+  /* BUTTON */
+  .button1 {
+    margin-top: 40px;
+  }
+
 }
