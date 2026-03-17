@@ -176,6 +176,8 @@ header img {
   border: none;
   margin-top: 0px;
   padding: 18px 50px;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .button1:hover {
