@@ -10,22 +10,34 @@
   </head>
 </html>
 <body>
-  <header>
-    <nav class="grid4x1">
+    <header>
       <a href="index.html"><img src="imgs/favicon.png" alt="" /></a>
+
+      <nav class="navbar">
+        <button class="burger" onclick="toggleMenu()">☰</button>
+
+        <ul class="menu" id="menu">
+          <li><a href="boxing som sport.html">Boxing som sport</a></li>
+          <li><a href="kom i gang.html">Kom i gang</a></li>
+          <li><a href="events.html">Events</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <nav class="grid4x1 desktop-nav">
+      <a href="index.html"><img src="imgs/favicon.png" class="img2" /></a>
       <a href="boxing som sport.html">Boxing som sport</a>
       <a href="kom i gang.html">Kom i gang</a>
       <a href="events.html">Events</a>
     </nav>
-  </header>
 
   <section>
     <div>
       <div class="hero">
-        <img src="imgs/workout.png" />
-        <div class="hero-content-left">
-          <h1>BOKSNING SOM SPORT</h1>
-          <p class="text-box">Lær alt om boksning – fra grundlæggende regler og træning til de forskellige former for boksning og hvad sporten kræver både fysisk og mentalt.</p>
+        <img src="imgs/workout.png" class="imgheight"/>
+        <div class="hero-content">
+          <h1 class="margin-less">BOKSNING SOM SPORT</h1>
+          <p>Lær alt om boksning – fra grundlæggende regler og træning til de forskellige former for boksning og hvad sporten kræver både fysisk og mentalt.</p>
         </div>
       </div>
     </div>
@@ -153,7 +165,7 @@
     <div class="margin-top2">
         </div>
       <h1 class="title-line">DET FYSISKE</h1>
-      <div class="grid4x1">
+      <div class="grid4-1">
         <div class="box">
             <img src="imgs/icons/kondition.png" class="icon">
           <h2>Kondition</h2>
@@ -253,5 +265,11 @@
         btn.closest(".modal").style.display = "none";
       });
     });
+
+  
+      function toggleMenu() {
+        document.getElementById("menu").classList.toggle("active");
+      }
+    
   </script>
 </body>

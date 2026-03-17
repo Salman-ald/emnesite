@@ -58,6 +58,38 @@ body {
   color: white;
 }
 
+footer {
+  background: #252525;
+  padding: 100px 30px;
+  margin-top: 10%;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 10px;
+  margin-left: -10px;
+  margin-bottom: 20px;
+}
+
+footer ul a {
+  text-decoration: none;
+  color: white;
+  padding: 0px 5px;
+  border-radius: 5px;
+}
+footer ul a:hover {
+  color: darkred;
+  background-color: #111;
+}
+
+footer li {
+  padding: 5px;
+}
+
+.hero-content p {
+  margin-top: -14px;
+}
+
 summary {
   font-family: "roboto", sans-serif;
 }
@@ -72,7 +104,9 @@ header {
   align-items: center;
   height: 80px;
   position: sticky;
+  z-index: 10;
   border-bottom: #252525 solid 1px;
+  height: 60px;
 }
 
 header a img {
@@ -87,14 +121,48 @@ header a {
   align-items: center;
 }
 
-nav {
+.navbar {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.menu.active {
+  display: flex;
+  flex-direction: column;
+  background: #333;
+  width: 100%;
+  padding: 20px 10px;
+  margin-top: 0px;
+}
+
+.burger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
 
 .img2 {
   max-height: 50px;
   height: auto;
+}
+
+.imgheight {
+  max-height: 500px;
+  min-height: 150px;
+  object-fit: cover;
+  object-position: left;
+  z-index: 0;
 }
 
 header img {
@@ -105,8 +173,8 @@ header img {
 .button1 {
   background-color: red;
   color: white;
-  margin-top: 100px;
   border: none;
+  margin-top: 0px;
   padding: 18px 50px;
 }
 
@@ -172,17 +240,23 @@ header img {
   background-color: #333;
   grid-template-columns: repeat(4, 1fr);
   gap: 2px;
+  height: 80px;
 }
 
 .grid4x1 a {
   position: relative;
   border-right: none;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .grid4x1 a:hover {
   background: red;
   filter: brightness(70%);
-  transition: transform 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .grid4x1 a::before {
@@ -202,8 +276,6 @@ header img {
   gap: 2px;
   margin: 10px;
 }
-
-
 
 .icon {
   width: 50px;
@@ -276,7 +348,6 @@ header img {
   padding: 20px;
   margin: 0 auto;
   text-align: center;
-
 }
 
 .text-left {
@@ -348,7 +419,7 @@ details[open] .faq-content {
   height: 200px;
   width: 100%;
   margin-top: -25px;
-  padding: 40px 0px;
+  padding: 100px 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -400,8 +471,6 @@ details[open] .faq-content {
   flex-direction: column;
 }
 
-
-
 .mental-section {
   display: grid;
   grid-template-columns: 1fr 2px 1fr;
@@ -419,7 +488,6 @@ details[open] .faq-content {
 .top {
   align-self: start;
 }
-
 
 .margin-top {
   margin-top: 10%;

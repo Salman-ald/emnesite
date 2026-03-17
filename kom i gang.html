@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Boxing som sport</title>
+    <title>Kom i gang med boksning</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="icon" href="imgs/favicon.png" />
@@ -12,26 +12,36 @@
 
 <body>
   <header>
-    <nav class="grid4x1">
-      <a href="index.html"><img src="imgs/favicon.png" alt="" /></a>
-      <a href="boxing som sport.html">Boxing som sport</a>
-      <a href="kom i gang.html">Kom i gang</a>
-      <a href="events.html">Events</a>
+    <a href="index.html"><img src="imgs/favicon.png" alt="" /></a>
+
+    <nav class="navbar">
+      <button class="burger" onclick="toggleMenu()">☰</button>
+
+      <ul class="menu" id="menu">
+        <li><a href="boxing som sport.html">Boxing som sport</a></li>
+        <li><a href="kom i gang.html">Kom i gang</a></li>
+        <li><a href="events.html">Events</a></li>
+      </ul>
     </nav>
   </header>
 
-  <section>
-    <div>
-      <div class="hero">
-        <img src="imgs/beginner.png" />
-        <div class="hero-content">
-          <h1>KOM I GANG MED BOKSNING</h1>
-          <p>Kom i gang med det samme - step by step</p>
-          <a href="#guide"><button class="button1">START</button></a>
-        </div>
+  <nav class="grid4x1 desktop-nav">
+    <a href="index.html"><img src="imgs/favicon.png" class="img2" /></a>
+    <a href="boxing som sport.html">Boxing som sport</a>
+    <a href="kom i gang.html">Kom i gang</a>
+    <a href="events.html">Events</a>
+  </nav>
+
+  <div>
+    <div class="hero">
+      <img src="imgs/beginner.png" class="imgheight" />
+      <div class="hero-content">
+        <h1>KOM I GANG MED BOKSNING</h1>
+        <p>Kom i gang med det samme - step by step</p>
+        <a href="#guide"><button class="button1">START</button></a>
       </div>
     </div>
-  </section>
+  </div>
 
   <section class="container3">
     <h1>ER DU USIKKER PÅ AT STARTE?</h1>
@@ -66,7 +76,8 @@
     <h1>HVAD SKAL DU BRUGE?</h1>
     <div class="grid1-1">
       <img src="imgs/boxing gear.jpg" />
-      <div>
+      <div class="margin-top">
+        
         <h2 class="text2">UDSTYR TIL BEGYNDERE</h2>
         <div>
           <h3 class="box3">Boksehandsker</h3>
@@ -84,6 +95,7 @@
           <h3 class="box3">Sjippetov</h3>
         </div>
       </div>
+      </section>
     </div>
   </section>
 
@@ -146,4 +158,10 @@
   </section>
 
   <footer>&copy 2026 Boxing Guide.</footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("menu").classList.toggle("active");
+    }
+  </script>
 </body>

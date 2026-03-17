@@ -1,37 +1,92 @@
 @media (min-width: 768px) {
-    header ul{
-        display: flex;
-        list-style: none;
-        justify-content: center;
-        gap: 20px;
-    }
+  header ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 20px;
+  }
 
-    
+  header {
+    display: none;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .desktop-nav {
+    display: grid;
+  }
+
+  .navbar {
+    justify-content: center;
+    gap: 40px;
+  }
 }
 
-
-
 @media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 24px;
+  }
+
+  .container3 h1,
+  h2 {
+    font-size: 24px;
+    margin-top: 0px;
+  }
+
+  .box3 h2 {
+    align-self: top;
+  }
+
+  .redsection {
+    padding: 180px 0px;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
 
   .burger {
     display: block;
   }
 
-  .nav-links {
+  .hero-content p {
+    font-size: 13px;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .hero-content .button1 {
+    margin-top: 0px;
+  }
+
+  .menu {
     display: none;
     flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #222;
   }
 
-
-  .menu a {
-    padding: 20px;
-    border-bottom: 1px solid #444;
-  }
-
-  .menu.show {
+  .menu.active {
     display: flex;
   }
 
+  .container,
+  .container2,
+  .container3,
+  .container4 {
+    padding: 0px;
+  }
 
   /* NAVIGATION */
   .grid4x1 {
@@ -89,8 +144,4 @@
   }
 
   /* BUTTON */
-  .button1 {
-    margin-top: 40px;
-  }
-
 }
